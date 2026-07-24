@@ -1,0 +1,233 @@
+<section class="contact" id="contact">
+
+    <div class="container">
+  
+  
+      <div class="section-header">
+  
+        <span class="section-tag">CONTACT</span>
+  
+        <h2>Let's Build Something Amazing</h2>
+  
+        <p>
+          I'm always open to learning opportunities, internships,
+          collaborations and exciting projects.
+        </p>
+  
+      </div>
+  
+  
+  
+      <div class="contact-wrapper">
+  
+  
+        <!-- LEFT SIDE -->
+  
+        <div class="contact-info">
+  
+  
+          <div class="info-card">
+  
+            <div class="icon">📧</div>
+  
+            <div>
+  
+              <h3>Email</h3>
+  
+              <p>ttheh98@gmail.com</p>
+  
+            </div>
+  
+          </div>
+  
+  
+  
+  
+          <div class="info-card">
+  
+            <div class="icon">📞</div>
+  
+            <div>
+  
+              <h3>Phone</h3>
+  
+              <p>+27 72 180 0190</p>
+  
+            </div>
+  
+          </div>
+  
+  
+  
+  
+          <div class="info-card">
+  
+            <div class="icon">📍</div>
+  
+            <div>
+  
+              <h3>Location</h3>
+  
+              <p>Johannesburg</p>
+  
+            </div>
+  
+          </div>
+  
+  
+  
+  
+          <div class="social-links">
+  
+  
+            <a href="https://github.com/Thembeka1" target="_blank">
+              GitHub
+            </a>
+  
+  
+            <a href="https://www.linkedin.com/in/thembeka-biyela-840a92193/" target="_blank">
+              LinkedIn
+            </a>
+  
+  
+          </div>
+  
+  
+        </div>
+  
+  
+  
+  
+  
+        <!-- RIGHT SIDE FORM -->
+  
+  
+        <form
+        class="contact-form"
+        #contactForm="ngForm"
+        (ngSubmit)="sendEmail()">
+  
+  
+  
+          <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          [(ngModel)]="emailData.name"
+          required>
+  
+  
+  
+  
+          <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          [(ngModel)]="emailData.email"
+          required>
+  
+  
+  
+  
+          <input
+          type="text"
+          name="subject"
+          placeholder="Subject"
+          [(ngModel)]="emailData.subject"
+          required>
+  
+  
+  
+  
+          <textarea
+  
+          rows="6"
+  
+          name="message"
+  
+          placeholder="Your Message"
+  
+          [(ngModel)]="emailData.message"
+  
+          required></textarea>
+  
+  
+  
+  
+  
+          <button 
+          type="submit"
+          [disabled]="isSending">
+  
+            Send Message
+  
+          </button>
+  
+  
+  
+        </form>
+  
+  
+      </div>
+  
+  
+  
+  
+  
+      <!-- SUCCESS POPUP -->
+  
+  
+      <div class="message-popup success-popup" *ngIf="showSuccess">
+
+        <div class="popup-icon">
+          ✅
+        </div>
+
+        <div>
+  
+          <h3>Success!</h3>
+  
+          <p>
+            Email sent successfully! 🎉
+          </p>
+  
+  
+        </div>
+  
+  
+      </div>
+  
+  
+      <!-- ERROR POPUP -->
+  
+  
+      <div
+      class="message-popup error-popup"
+      *ngIf="showError">
+  
+  
+        <div class="popup-icon">
+          ❌
+        </div>
+  
+  
+        <div>
+  
+          <h3>Failed!</h3>
+  
+          <p>
+            Failed to send email. Please try again.
+          </p>
+  
+  
+        </div>
+  
+  
+      </div>
+  
+  
+  
+    </div>
+  
+  
+  </section>

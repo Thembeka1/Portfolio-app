@@ -1,0 +1,313 @@
+/* =========================
+   SKILLS SECTION
+========================= */
+
+.skills {
+
+    padding:120px 0;
+
+    background:
+    linear-gradient(
+        135deg,
+        #f8f3ed,
+        #f4eee5,
+        #efe8dd
+    );
+
+}
+
+
+/* SECTION HEADER */
+
+.section-header{
+
+    text-align:center;
+
+   
+    color: #080b08;
+
+}
+
+.section-tag{
+
+    text-align:center;
+
+    font-size:50px;
+
+    color: #4f5948;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+
+.section-header p {
+
+    color:#68675f;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+
+
+/* =========================
+   SKILLS GRID
+========================= */
+
+
+.skills-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+/* =========================
+   SKILL CARD
+========================= */
+
+
+.skill-card {
+
+    background:#fdfaf5;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(155,130,84,0.18);
+
+    box-shadow:
+    0 20px 40px rgba(47,53,40,0.06);
+
+    transition:0.4s ease;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+.skill-card::before {
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:#9b8254;
+
+    transform:scaleX(0);
+
+    transition:0.4s ease;
+
+}
+
+
+
+.skill-card:hover::before {
+
+    transform:scaleX(1);
+
+}
+
+
+
+.skill-card:hover {
+
+    transform:translateY(-10px);
+
+}
+
+
+
+/* =========================
+   TITLE
+========================= */
+
+
+.skill-title {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#34382c;
+
+}
+
+
+
+.skill-title span:last-child {
+
+    color:#9b8254;
+
+    font-size:14px;
+
+}
+
+
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+
+.progress {
+
+    height:8px;
+
+    background:#e5dfd4;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+
+
+.progress-bar {
+
+    height:100%;
+
+    border-radius:20px;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #65705a,
+        #9b8254
+    );
+
+}
+
+
+
+/* SKILL LEVELS */
+
+
+.java {
+
+    width:80%;
+
+}
+
+
+.spring {
+
+    width:70%;
+
+}
+
+
+.angular {
+
+    width:75%;
+
+}
+
+
+.html {
+
+    width:90%;
+
+}
+
+
+.js {
+
+    width:75%;
+
+}
+
+
+.sql {
+
+    width:65%;
+
+}
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+@media(max-width:900px){
+
+
+.skills-grid {
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.skills {
+
+    padding:80px 20px;
+
+}
+
+
+.section-header h2 {
+
+    font-size:35px;
+
+}
+
+
+.skills-grid {
+
+    grid-template-columns:1fr;
+
+}
+
+
+.skill-card {
+
+    padding:25px;
+
+}
+
+
+}

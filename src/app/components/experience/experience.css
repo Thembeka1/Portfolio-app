@@ -1,0 +1,283 @@
+/*=====================================
+EXPERIENCE
+=====================================*/
+
+.experience{
+
+    padding:130px 0;
+
+    background:#f8f3eb;
+
+    position:relative;
+
+}
+
+/* Timeline */
+
+.timeline{
+
+    position:relative;
+
+    max-width:950px;
+
+    margin:70px auto 0;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:22px;
+
+    top:0;
+
+    width:2px;
+
+    height:100%;
+
+    background:linear-gradient(
+        to bottom,
+        #b79b62,
+        #5d6753
+    );
+
+}
+.section-tag{
+
+    text-align:center;
+
+    font-size:50px;
+
+    color: #4f5948;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+
+}
+.section-header{
+
+    text-align:center;
+
+   
+    color: #080b08;
+
+}
+/* Item */
+
+.timeline-item{
+
+    position:relative;
+
+    padding-left:80px;
+
+    margin-bottom:50px;
+
+}
+
+/* Dot */
+
+.timeline-dot{
+
+    position:absolute;
+
+    left:11px;
+
+    top:35px;
+
+    width:22px;
+
+    height:22px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    border:5px solid #b79b62;
+
+    transition:.3s;
+
+}
+
+.timeline-item:hover .timeline-dot{
+
+    background:#5d6753;
+
+    border-color:#5d6753;
+
+}
+
+/* Card */
+
+.timeline-content{
+
+    background:#fff;
+
+    border-left:5px solid #b79b62;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+}
+
+.timeline-content:hover{
+
+    transform:translateY(-6px);
+
+    border-left-color:#5d6753;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+/* Date */
+
+.date{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    background:#efe7d8;
+
+    color:#5d6753;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+/* Job */
+
+.timeline-content h3{
+
+    font-size:28px;
+
+    color:#263025;
+
+    margin-bottom:8px;
+
+}
+
+/* Company */
+
+.timeline-content h4{
+
+    display:inline-block;
+
+    background:#f4efe6;
+
+    color:#b79b62;
+
+    padding:6px 16px;
+
+    border-radius:30px;
+
+    font-size:15px;
+
+    margin-bottom:18px;
+
+}
+
+/* Description */
+
+.timeline-content p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+/* Skills */
+
+.skills{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+.skills span{
+
+    background:#f8f3eb;
+
+    color:#596047;
+
+    padding:8px 16px;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.skills span:hover{
+
+    background:#596047;
+
+    color:#fff;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.timeline::before{
+
+left:12px;
+
+}
+
+.timeline-item{
+
+padding-left:50px;
+
+}
+
+.timeline-dot{
+
+left:2px;
+
+width:18px;
+
+height:18px;
+
+}
+
+.timeline-content{
+
+padding:25px;
+
+}
+
+.timeline-content h3{
+
+font-size:22px;
+
+}
+
+}

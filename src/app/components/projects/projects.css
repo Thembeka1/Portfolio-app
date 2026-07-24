@@ -1,0 +1,293 @@
+/* PROJECTS SECTION */
+
+.projects {
+
+    padding:120px 0;
+
+    background:#f8f5ef;
+
+}
+
+
+/* GRID */
+
+.projects-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+
+
+/* CARD */
+
+.project-card {
+
+    background:white;
+
+    border-radius:8px;
+
+    overflow:hidden;
+
+    border:1px solid #e8e1d5;
+
+    transition:.4s ease;
+
+}
+
+
+
+.project-card:hover {
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+}
+
+
+
+/* IMAGE AREA */
+
+.project-image {
+
+    height:260px;
+
+    position:relative;
+
+    display:flex;
+
+    align-items:flex-end;
+
+    padding:30px;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        135deg,
+        #8b927b,
+        #4f5948
+    );
+
+}
+
+
+
+/* IMAGE BACKGROUND EFFECT */
+
+.project-image::before {
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        to top,
+        rgba(0,0,0,.45),
+        transparent
+    );
+
+}
+
+
+
+/* PROJECT TITLE */
+
+.project-image h3 {
+
+    position:relative;
+
+    z-index:2;
+
+    color:white;
+
+    font-family:Georgia, serif;
+
+    font-size:28px;
+
+    font-weight:400;
+
+    letter-spacing:1px;
+
+}
+
+
+
+/* CONTENT */
+
+.project-content {
+
+    padding:30px;
+
+}
+
+
+
+.project-content p {
+
+    color:#666;
+
+    line-height:1.7;
+
+    font-size:15px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+/* TECHNOLOGIES */
+
+.tech-stack {
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.tech-stack span {
+
+    background:#eef0e8;
+
+    color:#4f5948;
+
+    padding:8px 15px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:500;
+
+}
+
+
+
+/* BUTTONS */
+
+.project-buttons {
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+
+
+.project-buttons a {
+
+    text-decoration:none;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    transition:.3s;
+
+}
+
+
+
+/* DEMO BUTTON */
+
+.demo-btn {
+
+    background:#4f5948;
+
+    color:white;
+
+}
+
+
+
+/* GITHUB BUTTON */
+
+.github-btn {
+
+    border:1px solid #4f5948;
+
+    color:#4f5948;
+
+}
+.section-tag{
+
+    text-align:center;
+
+    font-size:50px;
+
+    color: #4f5948;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+
+}
+.section-header{
+
+    text-align:center;
+
+   
+    color: #080b08;}
+
+.demo-btn:hover {
+
+    background:#343b30;
+
+}
+
+
+
+.github-btn:hover {
+
+    background:#4f5948;
+
+    color:white;
+
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+    .projects-grid{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+
+
+@media(max-width:700px){
+
+    .projects-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
