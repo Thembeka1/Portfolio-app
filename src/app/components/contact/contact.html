@@ -155,12 +155,8 @@
   
   
   
-          <button 
-          type="submit"
-          [disabled]="isSending">
-  
-            Send Message
-  
+          <button type="submit" [disabled]="isSending">
+            {{ isSending ? 'Sending...' : 'Send Message' }}
           </button>
   
   

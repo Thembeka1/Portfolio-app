@@ -49,10 +49,6 @@
     align-items:center;
 }
 
-/*=========================================
- LEFT
-=========================================*/
-
 .badge{
     display:inline-flex;
     align-items:center;
@@ -60,7 +56,7 @@
     padding:12px 24px;
     background:white;
     border-radius:50px;
-    color:#8f7644;
+    color:#4f5948;
     border:1px solid rgba(183,155,98,.25);
     box-shadow:0 10px 25px rgba(0,0,0,.05);
     margin-bottom:30px;
@@ -205,29 +201,25 @@
 }
 
 /* Image */
-
 .avatar{
     width:100%;
     height:100%;
     overflow:hidden;
-    border-radius:220px 220px 30px 30px;
-    background:#d8d6cb;
-    padding:12px;
-    border:3px solid #b79b62;
-    box-shadow:0 40px 70px rgba(0,0,0,.15);
+    border-radius:210px 210px 20px 20px;
 }
 
 .avatar img{
     width:100%;
     height:100%;
     object-fit:cover;
-    object-position:center top;
+    object-position:center center; 
     border-radius:210px 210px 20px 20px;
-    transition:.5s;
+    transform:scale(1.18); 
+    transition:transform .5s ease;
 }
 
 .avatar:hover img{
-    transform:scale(1.05);
+    transform:scale(1.23);
 }
 
 /*=========================================

@@ -187,8 +187,9 @@ ICON
 
     border-radius:18px;
 
-    background:#4f5948;
-    
+   background:#4f5948;
+    color:white;
+
     display:flex;
 
     justify-content:center;
