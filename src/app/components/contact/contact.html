@@ -107,8 +107,6 @@
         #contactForm="ngForm"
         (ngSubmit)="sendEmail()">
   
-  
-  
           <input
           type="text"
           name="name"
@@ -154,12 +152,23 @@
   
   
   
-  
           <button type="submit" [disabled]="isSending">
-            {{ isSending ? 'Sending...' : 'Send Message' }}
+
+            <span *ngIf="isSending">
+              Sending...
+            </span>
+          
+            <span *ngIf="!isSending && !showSuccess">
+              Send Message
+            </span>
+          
+            <span *ngIf="showSuccess">
+              Sent ✓
+            </span>
+          
           </button>
   
-  
+
   
         </form>
   
